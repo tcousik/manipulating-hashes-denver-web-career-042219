@@ -1,3 +1,5 @@
+require "pry"
+
 def first_challenge
   contacts = {
     "Jon Snow" => {
@@ -12,14 +14,13 @@ def first_challenge
       favorite_icecream_flavors: ["strawberry", "cookie dough", "mint chip"]
     }
   }
+end
 
-contacts.each do |name, info|
-  info.each do |category, details|
-    if category == :favorite_icecream_flavors
-      details.delete_if {|type| type == "strawberry"}
-      end
+def flavor_remover(holiday_hash)
+  contacts.each do |name, info|
+    info.each do |stuff, deets|
     end
   end
 return contacts
 end
-
+  
